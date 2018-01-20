@@ -14,11 +14,6 @@ use StrategyPattern\Product\ProductInterface;
 class Order implements OrderInterface
 {
     /**
-     * @var array
-     */
-    private $products = [];
-
-    /**
      * @var float
      */
     private $total = 0.00;
@@ -28,7 +23,6 @@ class Order implements OrderInterface
      */
     public function addProduct(ProductInterface $product)
     {
-        $this->products[] = $product;
         $this->total += $product->price();
     }
 
