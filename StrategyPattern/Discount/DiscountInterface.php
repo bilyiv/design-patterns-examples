@@ -10,5 +10,11 @@ namespace StrategyPattern\Discount;
  */
 interface DiscountInterface
 {
-    public function calculate($amount);
+    /**
+     * Calculate the discount of the amount.
+     *
+     * @param float $amount
+     * @return float
+     */
+    public function calculate(float $amount): float;
 }
