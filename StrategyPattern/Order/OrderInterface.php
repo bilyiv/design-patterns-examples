@@ -2,6 +2,7 @@
 
 namespace StrategyPattern\Order;
 
+use StrategyPattern\Discount\DiscountInterface;
 use StrategyPattern\Product\ProductInterface;
 
 /**
@@ -25,4 +26,12 @@ interface OrderInterface
      * @return float
      */
     public function total(): float;
+
+    /**
+     * Apply discount to the order.
+     *
+     * @param DiscountInterface $discount
+     * @return mixed
+     */
+    public function applyDiscount(DiscountInterface $discount);
 }
