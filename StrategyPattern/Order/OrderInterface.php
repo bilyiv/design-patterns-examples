@@ -26,12 +26,4 @@ interface OrderInterface
      * @return float
      */
     public function total(): float;
-
-    /**
-     * Apply discount to the order.
-     *
-     * @param DiscountInterface $discount
-     * @return mixed
-     */
-    public function applyDiscount(DiscountInterface $discount);
 }

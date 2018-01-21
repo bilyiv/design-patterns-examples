@@ -25,12 +25,4 @@ interface ProductInterface
      * @return float
      */
     public function price(): float;
-
-    /**
-     * Apply discount to the product.
-     *
-     * @param DiscountInterface $discount
-     * @return mixed
-     */
-    public function applyDiscount(DiscountInterface $discount);
 }

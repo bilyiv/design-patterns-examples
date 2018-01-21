@@ -2,16 +2,19 @@
 
 namespace StrategyPattern\Order;
 
-use StrategyPattern\Discount\DiscountInterface;
+use StrategyPattern\Discount\{
+    Discountable,
+    DiscountInterface
+};
 use StrategyPattern\Product\ProductInterface;
 
 /**
- * Class Order
+ * Class BaseOrder
  *
  * @package StrategyPattern\Order
  * @author Vladyslav Bilyi <beliyvladislav@gmail.com>
  */
-class Order implements OrderInterface
+class BaseOrder implements OrderInterface, Discountable
 {
     /**
      * @var float

@@ -2,15 +2,18 @@
 
 namespace StrategyPattern\Product;
 
-use StrategyPattern\Discount\DiscountInterface;
+use StrategyPattern\Discount\{
+    Discountable,
+    DiscountInterface
+};
 
 /**
- * Class Product
+ * Class BaseProduct
  *
  * @package StrategyPattern\Product
  * @author Vladyslav Bilyi <beliyvladislav@gmail.com>
  */
-class Product implements ProductInterface
+class BaseProduct implements ProductInterface, Discountable
 {
     /**
      * @var string
