@@ -5,6 +5,10 @@ the strategy pattern is a behavioral software design pattern that enables
 selecting an algorithm at runtime. The strategy pattern defines a family of algorithms,
 encapsulates each algorithm, makes the algorithms interchangeable within that family.
 
+## Strategy pattern example UML
+
+![Strategy pattern example UML](https://raw.githubusercontent.com/bilyiv/design-patterns-php-examples/master/StrategyPattern/strategy-pattern-example-uml.png)
+
 ## How to use the example
 ```php
 <?php
