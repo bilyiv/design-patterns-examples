@@ -13,7 +13,7 @@ use StrategyPattern\Discount\{
  * @package StrategyPattern\Product
  * @author Vladyslav Bilyi <beliyvladislav@gmail.com>
  */
-class BaseProduct implements ProductInterface, Discountable
+class BaseProduct implements Saleable, Discountable
 {
     /**
      * @var string

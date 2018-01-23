@@ -6,7 +6,7 @@ use StrategyPattern\Discount\{
     Discountable,
     DiscountInterface
 };
-use StrategyPattern\Product\ProductInterface;
+use StrategyPattern\Product\Saleable;
 
 /**
  * Class BaseOrder
@@ -24,7 +24,7 @@ class BaseOrder implements OrderInterface, Discountable
     /**
      * @inheritdoc
      */
-    public function addProduct(ProductInterface $product)
+    public function addProduct(Saleable $product)
     {
         $this->total += $product->price();
     }

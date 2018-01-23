@@ -2,8 +2,7 @@
 
 namespace StrategyPattern\Order;
 
-use StrategyPattern\Discount\DiscountInterface;
-use StrategyPattern\Product\ProductInterface;
+use StrategyPattern\Product\Saleable;
 
 /**
  * Interface OrderInterface
@@ -16,9 +15,9 @@ interface OrderInterface
     /**
      * Add the product to the order.
      *
-     * @param ProductInterface $product
+     * @param Saleable $product
      */
-    public function addProduct(ProductInterface $product);
+    public function addProduct(Saleable $product);
 
     /**
      * Retrieve the order total.

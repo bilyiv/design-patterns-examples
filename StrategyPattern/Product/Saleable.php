@@ -2,25 +2,23 @@
 
 namespace StrategyPattern\Product;
 
-use StrategyPattern\Discount\DiscountInterface;
-
 /**
- * Interface ProductInterface
+ * Interface Saleable
  *
  * @package StrategyPattern\Product
  * @author Vladyslav Bilyi <beliyvladislav@gmail.com>
  */
-interface ProductInterface
+interface Saleable
 {
     /**
-     * Retrieve the product title.
+     * Retrieve the subject title.
      *
      * @return string
      */
     public function title(): string;
 
     /**
-     * Retrieve the product price.
+     * Retrieve the subject price.
      *
      * @return float
      */
