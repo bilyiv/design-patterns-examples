@@ -13,25 +13,18 @@ encapsulates each algorithm, makes the algorithms interchangeable within that fa
 ```php
 <?php
 
-use StrategyPattern\{
-    Discount\PercentDiscount,
-    Product\BaseProduct,
-    Order\BaseOrder,
-};
+$discount = new PercentDiscount(50);
 
-// Create 10% discount.
-$discount = new PercentDiscount(10);
+$phone = new BaseProduct('Phone', 200);
+$phone->applyDiscount($discount);
+echo $phone->price(); // 100
 
-// Create Meizu M3s as a product then apply created discount.
-$meizuM3s = new BaseProduct('Meizu M3s', 1000);
-$meizuM3s->applyDiscount($discount);
+$computer = new BaseProduct('Computer', 800);
+echo $computer->price(); // 800
 
-// Create Iphone X as a product.
-$iphoneX = new BaseProduct('Iphone X', 1000);
-
-// Make an order then apply the discount again, but to the order.
 $order = new BaseOrder();
-$order->addProduct($meizuM3s);
-$order->addProduct($iphoneX);
+$order->addProduct($phone);
+$order->addProduct($computer);
 $order->applyDiscount($discount);
+echo $order->total(); // 450
 ```
