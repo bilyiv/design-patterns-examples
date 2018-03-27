@@ -1,6 +1,6 @@
 <?php
 
-namespace StrategyPattern\Discount;
+namespace StrategyPattern\DiscountExample\Discount;
 
 /**
  * Class StaticDiscount

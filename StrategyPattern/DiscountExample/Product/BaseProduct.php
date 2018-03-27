@@ -1,8 +1,8 @@
 <?php
 
-namespace StrategyPattern\Product;
+namespace StrategyPattern\DiscountExample\Product;
 
-use StrategyPattern\Discount\{
+use StrategyPattern\DiscountExample\Discount\{
     Discountable,
     Discount
 };

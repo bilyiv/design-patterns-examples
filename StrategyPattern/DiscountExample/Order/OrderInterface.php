@@ -1,8 +1,8 @@
 <?php
 
-namespace StrategyPattern\Order;
+namespace StrategyPattern\DiscountExample\Order;
 
-use StrategyPattern\Product\Saleable;
+use StrategyPattern\DiscountExample\Product\Saleable;
 
 /**
  * Interface OrderInterface

@@ -1,6 +1,6 @@
 <?php
 
-namespace StrategyPattern\Product;
+namespace StrategyPattern\DiscountExample\Product;
 
 /**
  * Interface Saleable
