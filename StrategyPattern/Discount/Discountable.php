@@ -13,7 +13,7 @@ interface Discountable
     /**
      * Apply the discount to the subject.
      *
-     * @param DiscountInterface $discount
+     * @param Discount $discount
      */
-    public function applyDiscount(DiscountInterface $discount);
+    public function applyDiscount(Discount $discount);
 }

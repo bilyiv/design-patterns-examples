@@ -3,16 +3,14 @@
 namespace StrategyPattern\Discount;
 
 /**
- * Class AbstractDiscount
+ * Class Discount
  *
  * @package StrategyPattern\Discount
  * @author Vladyslav Bilyi <beliyvladislav@gmail.com>
  */
-abstract class AbstractDiscount implements DiscountInterface
+abstract class Discount
 {
     /**
-     * Size of the discount.
-     *
      * @var float
      */
     protected $size;
@@ -23,7 +21,10 @@ abstract class AbstractDiscount implements DiscountInterface
     }
 
     /**
-     * @inheritdoc
+     * Calculate amount with discount.
+     *
+     * @param float $amount
+     * @return float
      */
     abstract public function calculate(float $amount): float;
 }

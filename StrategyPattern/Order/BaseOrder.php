@@ -4,7 +4,7 @@ namespace StrategyPattern\Order;
 
 use StrategyPattern\Discount\{
     Discountable,
-    DiscountInterface
+    Discount
 };
 use StrategyPattern\Product\Saleable;
 
@@ -40,7 +40,7 @@ class BaseOrder implements OrderInterface, Discountable
     /**
      * @inheritdoc
      */
-    public function applyDiscount(DiscountInterface $discount)
+    public function applyDiscount(Discount $discount)
     {
         $this->total -= $discount->calculate($this->total);
     }
