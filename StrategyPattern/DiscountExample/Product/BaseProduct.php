@@ -3,8 +3,7 @@
 namespace StrategyPattern\DiscountExample\Product;
 
 use StrategyPattern\DiscountExample\Discount\{
-    Discountable,
-    Discount
+    AbstractDiscount, DiscountableInterface
 };
 
 /**
@@ -13,7 +12,7 @@ use StrategyPattern\DiscountExample\Discount\{
  * @package StrategyPattern\Product
  * @author Vladyslav Bilyi <beliyvladislav@gmail.com>
  */
-class BaseProduct implements Saleable, Discountable
+class BaseProduct implements SaleableInterface, DiscountableInterface
 {
     /**
      * @var string
@@ -50,7 +49,7 @@ class BaseProduct implements Saleable, Discountable
     /**
      * @inheritdoc
      */
-    public function applyDiscount(Discount $discount)
+    public function applyDiscount(AbstractDiscount $discount)
     {
         $this->price -= $discount->calculate($this->price);
     }

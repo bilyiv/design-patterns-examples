@@ -3,10 +3,9 @@
 namespace StrategyPattern\DiscountExample\Order;
 
 use StrategyPattern\DiscountExample\Discount\{
-    Discountable,
-    Discount
+    AbstractDiscount, DiscountableInterface
 };
-use StrategyPattern\DiscountExample\Product\Saleable;
+use StrategyPattern\DiscountExample\Product\SaleableInterface;
 
 /**
  * Class BaseOrder
@@ -14,7 +13,7 @@ use StrategyPattern\DiscountExample\Product\Saleable;
  * @package StrategyPattern\Order
  * @author Vladyslav Bilyi <beliyvladislav@gmail.com>
  */
-class BaseOrder implements OrderInterface, Discountable
+class BaseOrder implements OrderInterface, DiscountableInterface
 {
     /**
      * @var float
@@ -24,7 +23,7 @@ class BaseOrder implements OrderInterface, Discountable
     /**
      * @inheritdoc
      */
-    public function addProduct(Saleable $product)
+    public function addProduct(SaleableInterface $product)
     {
         $this->total += $product->price();
     }
@@ -40,7 +39,7 @@ class BaseOrder implements OrderInterface, Discountable
     /**
      * @inheritdoc
      */
-    public function applyDiscount(Discount $discount)
+    public function applyDiscount(AbstractDiscount $discount)
     {
         $this->total -= $discount->calculate($this->total);
     }

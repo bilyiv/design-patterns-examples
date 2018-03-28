@@ -8,7 +8,7 @@ namespace StrategyPattern\DiscountExample\Discount;
  * @package StrategyPattern\Discount
  * @author Vladyslav Bilyi <beliyvladislav@gmail.com>
  */
-class PercentDiscount extends Discount
+class PercentDiscount extends AbstractDiscount
 {
     /**
      * @inheritdoc

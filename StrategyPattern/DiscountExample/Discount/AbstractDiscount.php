@@ -3,12 +3,12 @@
 namespace StrategyPattern\DiscountExample\Discount;
 
 /**
- * Class Discount
+ * Class AbstractDiscount
  *
  * @package StrategyPattern\Discount
  * @author Vladyslav Bilyi <beliyvladislav@gmail.com>
  */
-abstract class Discount
+abstract class AbstractDiscount
 {
     /**
      * @var float

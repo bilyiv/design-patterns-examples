@@ -3,12 +3,12 @@
 namespace StrategyPattern\DiscountExample\Product;
 
 /**
- * Interface Saleable
+ * Interface SaleableInterface
  *
  * @package StrategyPattern\Product
  * @author Vladyslav Bilyi <beliyvladislav@gmail.com>
  */
-interface Saleable
+interface SaleableInterface
 {
     /**
      * Retrieve the subject title.

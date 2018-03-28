@@ -8,12 +8,12 @@ namespace StrategyPattern\DiscountExample\Discount;
  * @package StrategyPattern\Discount
  * @author Vladyslav Bilyi <beliyvladislav@gmail.com>
  */
-interface Discountable
+interface DiscountableInterface
 {
     /**
      * Apply the discount to the subject.
      *
-     * @param Discount $discount
+     * @param AbstractDiscount $discount
      */
-    public function applyDiscount(Discount $discount);
+    public function applyDiscount(AbstractDiscount $discount);
 }
