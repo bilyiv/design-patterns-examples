@@ -2,3 +2,4 @@
 
 There are following design patterns:
 * [Strategy](StrategyPattern)
+* [Composite](CompositePattern)
