@@ -1,4 +1,4 @@
-# Design patterns in PHP examples
+# Design patterns in examples
 
 There are following design patterns:
 * [Strategy](StrategyPattern)
