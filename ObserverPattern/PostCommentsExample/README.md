@@ -1,6 +1,6 @@
 ## UML
 
-![Observer pattern example UML](https://raw.githubusercontent.com/bilyiv/design-patterns-php-examples/master/ObserverPattern/PostCommentsExample/observer-pattern-example-uml.png)
+![Observer pattern example UML](https://raw.githubusercontent.com/bilyiv/design-patterns-php-examples/master/ObserverPattern/PostCommentsExample/uml.png)
 
 ## How to use
 ```php

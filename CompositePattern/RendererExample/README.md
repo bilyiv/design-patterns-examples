@@ -1,6 +1,6 @@
 ## UML
 
-![Composite pattern example UML](https://raw.githubusercontent.com/bilyiv/design-patterns-php-examples/master/CompositePattern/RendererExample/composite-pattern-example-uml.png)
+![Composite pattern example UML](https://raw.githubusercontent.com/bilyiv/design-patterns-php-examples/master/CompositePattern/RendererExample/uml.png)
 
 ## How to use
 ```php

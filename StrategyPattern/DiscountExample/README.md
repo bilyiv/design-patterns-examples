@@ -1,6 +1,6 @@
 ## UML
 
-![Strategy pattern example UML](https://raw.githubusercontent.com/bilyiv/design-patterns-php-examples/master/StrategyPattern/DiscountExample/strategy-pattern-example-uml.png)
+![Strategy pattern example UML](https://raw.githubusercontent.com/bilyiv/design-patterns-php-examples/master/StrategyPattern/DiscountExample/uml.png)
 
 ## How to use
 ```php
